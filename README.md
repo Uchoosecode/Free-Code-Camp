@@ -1,0 +1,1 @@
+All of these Projects are apart of the freecodecamp.org lessons. There will less commits since I am doing the steps on the platfroms environment.
