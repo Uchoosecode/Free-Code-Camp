@@ -1,0 +1,1 @@
+This is an app that is completely built using only html. The pictures were provided by freecodecamp.org and the entire lesson.
