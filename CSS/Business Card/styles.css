@@ -1,0 +1,43 @@
+body {
+    background-color: goldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    color:olive
+}
+
+a:hover {
+    color:darkgoldenrod;
+    text-decoration: underline;
+}
+
+a:visited {
+    color:darkgreen;
+    text-decoration: underline;
+}
+
+.business-card {
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-image {
+    max-width: 100%;
+}
