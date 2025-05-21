@@ -1,0 +1,20 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgreen;
+}
+
+a:visited {
+  color: orangered;
+}
+
+a:active {
+  color: darkgoldenrod;
+}
+
+a:focus {
+  border: 2pt;
+}
