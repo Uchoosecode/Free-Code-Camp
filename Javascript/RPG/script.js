@@ -16,7 +16,10 @@ xp = 0;
  monsterStats = document.querySelector("#monsterStats");
  monsterName = document.querySelector("#monsterName");
  monsterHealthText = document.querySelector("#monsterHealthText");
-
+weapons = [{ name: "stick", power: 5 },
+           { name: "dagger", power: 30 },
+           { name: "claw hammer", power: 50 },
+           { name: "sword", power: 100 }];
 
 //initialize buttons
 button1.onclick = goStore;
