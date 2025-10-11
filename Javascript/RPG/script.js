@@ -20,6 +20,8 @@ weapons = [{ name: "stick", power: 5 },
            { name: "dagger", power: 30 },
            { name: "claw hammer", power: 50 },
            { name: "sword", power: 100 }];
+monsters = [{name: "dragon", level: 20, health: 300},];
+locations = [{name: "store","button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"], "button functions": [buyHealth, buyWeapon, goTown], text: "You enter the store."},]
 
 //initialize buttons
 button1.onclick = goStore;
