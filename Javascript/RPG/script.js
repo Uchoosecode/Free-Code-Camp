@@ -21,7 +21,24 @@ weapons = [{ name: "stick", power: 5 },
            { name: "claw hammer", power: 50 },
            { name: "sword", power: 100 }];
 monsters = [{name: "dragon", level: 20, health: 300},];
-locations = [{name: "store","button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"], "button functions": [buyHealth, buyWeapon, goTown], text: "You enter the store."},]
+locations = [
+    {
+        name: "town square",
+        "button text": ["Go to store", "Go to cave", "Fight dragon"],
+        "button functions": [goStore, goCave, fightDragon],
+        text: "You are in the town square. You see a sign that says \"Store\"."
+    },
+    {
+        name: "store","button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"], "button functions": [buyHealth, buyWeapon, goTown], text: "You enter the store."
+    },
+    {
+        name: "cave",
+        "button text": ["Fight dragon", "Fight dragon", "Go to town square"],
+        "button functions": [fightDragon, fightDragon, goTown],
+        text: "You enter the cave. You see some monsters."
+    },
+
+]
 
 //initialize buttons
 button1.onclick = goStore;
@@ -38,12 +55,16 @@ function update(location) {
     text.innerText = location.text;
 }
 
+function goTown() {
+   update(locations[0]);
+}
+
 function goStore() {
-    update(locations[0]);
+    update(locations[1]);
 }
 
 function goCave() {
-    console.log("Going to the cave");
+    update(locations[2]);
 }
 
 function fightDragon() {
@@ -58,6 +79,3 @@ function buyWeapon() {
     console.log("Buying weapon");
 }
 
-function goTown() {
-    console.log("Going to town");
-}
