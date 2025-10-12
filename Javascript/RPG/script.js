@@ -72,10 +72,21 @@ function fightDragon() {
 }
 
 function buyHealth() {
-    console.log("Buying health");
+    if (gold >= 10) {
+        gold -= 10;
+        health += 10;
+        goldText.innerText = gold;
+        healthText.innerText = health;
+    }
 }
 
 function buyWeapon() {
-    console.log("Buying weapon");
+    if (currentWeapon < weapons.length - 1) {
+        gold -= 30;
+        currentWeapon++;
+        goldText.innerText = gold;
+        text.innerText = "You now have a new weapon";
+        
+    }
 }
 
